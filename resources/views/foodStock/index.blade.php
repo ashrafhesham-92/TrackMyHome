@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="full-width-section col-xs-12">
-                <a href="#" class="btn btn-success add-item fas fa-plus-circle">  Add new item</a>
+                <a href="{{route('add_item')}}" class="btn btn-success add-item fas fa-plus-circle">  Add new item</a>
                 <div class="list-panel panel panel-primary">
                     <div class="panel-heading">
                         Your food stock items <i class="far fa-lemon"></i>

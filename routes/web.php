@@ -26,4 +26,7 @@ Route::middleware(['auth', 'joined_home'])->group(function()
     Route::post('save_home', ['as'=>'save_home', 'uses'=>'HomeController@save']);
     Route::get('my_home', ['as'=>'my_home', 'uses'=>'HomeController@index']);
     Route::get('food_stock', ['as'=>'food_stock', 'uses'=>'FoodStockController@index']);
+    Route::get('add_item', ['as'=>'add_item', 'uses'=>'FoodStockController@addItem']);
+    Route::view('add_item', 'foodStock.add_item')->name('add_item');
+    Route::post('save_item', 'FoodStockController@saveItem')->name('save_item');
 });
